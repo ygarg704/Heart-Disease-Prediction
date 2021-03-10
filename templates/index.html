@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Heart Disease Prediction</title>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<h1>Heart Disease Prediction</h1>
+
+	<form action= "{{url_for('second')}}" method="POST" >
+
+        <label for="inlineFormInputName1" class="form-label">Age:</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName1" placeholder="Example - 14" name="age">
+
+        <label for="inlineFormInputName2" class="form-label">Sex:</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="1 = Male, 0 = Female" name="sex">
+
+        <label for="inlineFormInputName3" class="form-label">Chest Pain Type:</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName3" placeholder="1 = Typical angina, 2 = Atypical angina, 3 = Non-anginal pain, 4 = Asymptotic" name="chest">
+
+        <label for="inlineFormInputName4" class="form-label">Resting Blood Pressure:</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName4" placeholder="Enter the value in mmHg(unit)" name="bp">
+
+        <label for="inlineFormInputName5" class="form-label">Serum Cholestrol:</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName5" placeholder="Enter the value in mg/dl(unit)" name="chol">
+
+        <label for="inlineFormInputName6" class="form-label">Fasting Blood Sugar:</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName6" placeholder="1 = Fasting Blood Sugar > 120mg/dl, else 0" name="fbs">
+
+        <label for="inlineFormInputName7" class="form-label">Resting ECG:</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName7" placeholder="0 = Normal, 1 = Having ST-T wave abnormality, 2 = Left ventricular hyperthrophy" name="ecg">
+
+        <label for="inlineFormInputName8" class="form-label">Max Heart Rate Achieved:</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName8" placeholder="Example - 132" name="heartRate">
+
+        <label for="inlineFormInputName9" class="form-label">Excercise Induced Angina:</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName9" placeholder="1 = Yes, 0 = No" name="eia">
+
+        <label for="inlineFormInputName10" class="form-label">ST Depression Induced by Exercise Relative to Rest:</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName10" placeholder="Example - 2.3" name="depression">
+
+        <label for="inlineFormInputName11" class="form-label">Peak exercise ST segment:</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName11" placeholder="1 = Upsloping, 2 = Flat, 3 = Downsloping" name="segment">
+
+        <label for="inlineFormInputName12" class="form-label">Number of Major Vessels Colored by Flourosopy:</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName12" placeholder="0 – 3" name="color">
+
+        <label for="inlineFormInputName13" class="form-label">Thalassemia:</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName13" placeholder="3 = Normal, 6 = Fixed Defect, 7 = Reversible Defect" name="thal">
+
+        <button class="btn btn-secondary" id="button-addon2">Submit</button>
+
+    </form>
+
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>
