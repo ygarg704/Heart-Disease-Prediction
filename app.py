@@ -2,8 +2,12 @@ from flask import Flask, render_template, request
 import pandas as pd
 import joblib
 from sklearn.preprocessing import StandardScaler
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route('/')
 def hello_world():
@@ -42,6 +46,7 @@ def button():
         }
 
         print(preds)
+        preds.headers.add("Access-Control-Allow-Origin", "*")
         return preds
 
 if __name__ == '__main__':
